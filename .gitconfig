@@ -1,0 +1,14 @@
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+
+[credential]
+  helper = osxkeychain
+
+[user]
+  name = Bobby Bobak
+  email = bobak.art@gmail.com
+
+[pretty]
+  colored = format:%C(yellow)%h%Creset <%an> %s %C(green)(%cr) %Creset
+  graph = format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
