@@ -45,3 +45,4 @@ mas "Twitter", id: 1482454543
 mas "HCC Solitaire", id: 1483268248
 mas "Affinity Photo", id: 824183456
 mas "Realm Browser", id: 1007457278
+mas "PiPer", id: 1421915518
