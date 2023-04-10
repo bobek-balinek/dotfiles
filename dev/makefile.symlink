@@ -1,7 +1,9 @@
 status:
 	@for dir in $$(find $$(pwd) -type d -name '.git'); do \
 		cd "$$(dirname "$$dir")"; \
-		git diff-index --quiet HEAD || echo "$$(pwd)"; \
+		if [ -n $(git status --porcelain) ]; then \
+			echo "$$(pwd)"; \
+		fi; \
 		cd - > /dev/null; \
 	done
 
