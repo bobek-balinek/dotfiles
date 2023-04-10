@@ -1,48 +1,57 @@
-tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/services"
-tap "tombell/formulae"
-brew "carthage"
-brew "cmake"
+brew "1password"
+brew "awscli"
+brew "blender"
+brew "ffmpeg"
 brew "git"
 brew "go"
+brew "jq"
 brew "mas"
-brew "sourcery"
+brew "nodenv"
+brew "obs"
+brew "pyenv"
+brew "rbenv"
 brew "swiftformat"
 brew "swiftlint"
+brew "taglib"
+brew "terraform"
+brew "webp"
 brew "wget"
-brew "heroku/brew/heroku"
-brew "tombell/formulae/zengarden"
-brew "tombell/formulae/releasekit"
-cask "1password"
-cask "blender"
+brew "zsh-completions"
+brew "zsh"
+cask "affinity-photo"
 cask "docker"
-cask "firefox"
+cask "dropbox"
 cask "google-chrome"
-cask "insomnia"
-cask "kap"
-cask "keepingyouawake"
+cask "lagrange"
 cask "ngrok"
-cask "obs"
-cask "postgres"
 cask "postico"
-cask "qlcolorcode"
 cask "qlmarkdown"
-cask "qlstephen"
 cask "quicklook-json"
+cask "signal"
 cask "sketch"
-cask "steam"
-cask "teamviewer"
+cask "tableplus"
+cask "telegram"
 cask "the-unarchiver"
 cask "visual-studio-code"
 cask "vlc"
+mas "1Blocker", id: 1365531024
+mas "Affinity Photo 2", id: 1616822987
+mas "Amphetamine", id: 937984704
+mas "CleanMyMac X", id: 1339170533
+mas "Couverture", id: 1552415914
+mas "Craft", id: 1487937127
+mas "Darkroom", id: 953286746
+mas "DevCleaner", id: 1388020431
+mas "iMovie", id: 408981434
+mas "iStat Menus", id: 1319778037
+mas "Keynote", id: 409183694
+mas "Medis", id: 1579200037
+mas "Muse", id: 1501563902
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
-mas "1Blocker", id: 1107421413
+mas "Shazam", id: 897118787
+mas "TestFlight", id: 899247664
 mas "Twitter", id: 1482454543
-mas "HCC Solitaire", id: 1483268248
-mas "Affinity Photo", id: 824183456
-mas "Realm Browser", id: 1007457278
-mas "PiPer", id: 1421915518
+mas "Xcode", id: 497799835
