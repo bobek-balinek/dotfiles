@@ -75,7 +75,7 @@ plugins=(
   golang
   docker
   docker-compose
-  osx
+  macos
   zsh-completions
   zsh-autosuggestions
   zsh-syntax-highlighting

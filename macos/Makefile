@@ -1,4 +1,4 @@
 init:
-	$(shell ./set-defaults.sh)
+	@${PWD}/set-defaults.sh
 
 .PHONY: init

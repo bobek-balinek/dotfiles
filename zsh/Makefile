@@ -1,8 +1,10 @@
+ZSH_CUSTOM=${ZSH}/custom
+
 plugins:
-	@git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-	@git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions
-	@git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-	@git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
+	@while read plugin; do \
+		echo "ZSH: Installing $$plugin"; \
+		git -C "${ZSH_CUSTOM}/plugins/$$plugin" pull || git clone https://github.com/zsh-users/$$plugin ${ZSH_CUSTOM}/plugins/$$plugin; \
+	done < ${PWD}/plugins
 
 init: plugins
 	@ln -sfn ${PWD}/src ${HOME}/.zsh

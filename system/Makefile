@@ -6,4 +6,4 @@ clean:
 	@rm ${HOME}/.ignore || true
 	@rm ${HOME}/.editorconfig || true
 
-.PHONY: init clean
+.PHONY: clean init
