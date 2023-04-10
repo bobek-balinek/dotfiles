@@ -1,0 +1,8 @@
+status:
+	@for dir in $$(find $$(pwd) -type d -name '.git'); do \
+		cd "$$(dirname "$$dir")"; \
+		git diff-index --quiet HEAD || echo "$$(pwd)"; \
+		cd - > /dev/null; \
+	done
+
+.PHONY: status
